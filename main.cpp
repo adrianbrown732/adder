@@ -1,9 +1,18 @@
 #include <iostream>
 #include <limits>
 
+int getUserInput()
+{
+    std::cout << "Enter a number: ";
+    int input{};
+    std::cin >> input;
+    return input;
+}
+
 int main()
 {
-    std::cout << "Bonjour!\n";
+    int test{getUserInput()};
+    std::cout << test << '\n';
 
     // Wait for input to end program
     std::cin.clear();
