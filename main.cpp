@@ -9,9 +9,14 @@ int getUserInput()
     return input;
 }
 
+int doubleInput(int x)
+{
+    return x * 2;
+}
+
 int main()
 {
-    int test{getUserInput()};
+    int test{doubleInput(getUserInput())};
     std::cout << test << '\n';
 
     // Wait for input to end program
