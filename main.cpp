@@ -1,28 +1,15 @@
 #include <iostream>
 #include <limits>
-
-int getUserInput()
-{
-    std::cout << "Enter a number: ";
-    int input{};
-    std::cin >> input;
-    return input;
-}
-
-int doubleInput(int x)
-{
-    return x * 2;
-}
-
-int tripleInput(int x)
-{
-    return x * 3;
-}
+#include "add.h"
 
 int main()
 {
-    int test{tripleInput(getUserInput())};
-    std::cout << test << '\n';
+    int inputNum{getUserInput()};
+    int doubleNum{doubleInput(inputNum)};
+    int tripleNum{tripleInput(inputNum)};
+    std::cout << "Your input is: " << inputNum << '\n';
+    std::cout << "Double: " << doubleNum << '\n';
+    std::cout << "Triple: " << tripleNum << '\n';
 
     // Wait for input to end program
     std::cin.clear();
