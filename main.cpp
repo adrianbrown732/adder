@@ -14,9 +14,14 @@ int doubleInput(int x)
     return x * 2;
 }
 
+int tripleInput(int x)
+{
+    return x * 3;
+}
+
 int main()
 {
-    int test{doubleInput(getUserInput())};
+    int test{tripleInput(getUserInput())};
     std::cout << test << '\n';
 
     // Wait for input to end program
